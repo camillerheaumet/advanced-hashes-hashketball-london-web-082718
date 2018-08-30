@@ -181,6 +181,6 @@ end
 def big_shoe_rebounds
   game_hash.each do |team, team_infos|
     game_hash[team][:players].each do |player|
-      player[:shoe].ma
+      player[:shoe].max
   
 end
