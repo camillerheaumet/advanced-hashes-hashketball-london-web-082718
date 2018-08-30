@@ -186,6 +186,8 @@ def big_shoe_rebounds
       binding.pry
       if player[:shoe] > biggest_shoe
         biggest_shoe = player[:shoe]
+        rebounds_shoe = player[:player_name]
+      end
         
     end
   end
