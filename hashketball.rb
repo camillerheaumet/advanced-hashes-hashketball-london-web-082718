@@ -179,11 +179,11 @@ end
 #   return stats #.delete(:player_name)
 # end
 
-def player_stats(playerName)
+def player_stats(player_name)
   stats = {}
   game_hash.each do |team, team_infos|
     game_hash[team][:players].each do |player|
-      puts player
+      if player[:player_name] == player_name
     end
   end
   return stats #.delete(:player_name)
