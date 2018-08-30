@@ -179,10 +179,11 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  biggest_shoe = 0
   game_hash.each do |team, team_infos|
     game_hash[team][:players].each do |player|
       binding.pry
-      player[:shoe].max_by {|shoe, size| size}
+      if player[:shoe] >
     end
   end
 end
